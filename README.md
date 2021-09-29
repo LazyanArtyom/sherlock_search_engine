@@ -19,9 +19,7 @@ This project depends on some packages, which need to be installed prior to build
 ``` bash
 > cd back_end && mkdir build && cd build
 > conan install .. && cmake .. && cmake --build .
-> ./sloth_search_engine
-
-> Run tests with `ctest -V`
+> ./sherlock
 ```
 
 

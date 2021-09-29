@@ -28,7 +28,7 @@
 *.out
 *.app
 
-# CMake related files
+/.vscode
 /build
 /.idea
 /cmake-build-*

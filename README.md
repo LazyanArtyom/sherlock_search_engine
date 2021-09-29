@@ -28,7 +28,7 @@ sudo apt install librestbed-dev
 
 ``` bash
 > cd back_end && mkdir build && cd build
-> conan install .. && cmake .. && cmake --build .
+> cmake .. && cmake --build .
 > ./sherlock
 ```
 

@@ -21,13 +21,16 @@ const App = (props) => {
     history.push('/search');
   };
   
+  // search handler
+  const searchHandler = async (result) => {
+    setSearchData(result);
+  };
+
   //set search data
   const setData = async (term) => {
 
-    // to do
-    //const results = await GetDataFromServer(term);
-    const results = "goooooooddddddddddddd";
-    setSearchData(results);
+    let communicationApi = new CommunicationApi('http://127.0.0.1:8080');
+    communicationApi.search(term, searchHandler)
   };
 
   return (
@@ -46,7 +49,6 @@ const App = (props) => {
               searchTerm={searchTerm}
               searchData={searchData}
               setSearch={setSearch}
-              communicationApi={new CommunicationApi('http://127.0.0.1:8080')}
             />
           )}
         />

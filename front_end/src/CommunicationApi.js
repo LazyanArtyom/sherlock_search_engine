@@ -13,7 +13,7 @@ class CommunicationApi {
         fetch(this.makeURL(term))
             .then(res => res.json())
             .then( (response) => {
-                handler(response["result"]);
+               handler(response["result"]);
             },
             (err) => {
                 handler(err);

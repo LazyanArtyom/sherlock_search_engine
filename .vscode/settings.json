@@ -1,0 +1,8 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/back_end",
+    "files.associations": {
+        "tuple": "cpp",
+        "*.tcc": "cpp",
+        "fstream": "cpp"
+    }
+}

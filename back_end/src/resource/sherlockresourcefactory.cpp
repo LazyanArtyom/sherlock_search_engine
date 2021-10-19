@@ -1,5 +1,5 @@
 #include "sherlockresourcefactory.h"
-#include "../json.hpp"
+#include "../utilities/json.h"
 
 #include <sstream>
 #include <iomanip>

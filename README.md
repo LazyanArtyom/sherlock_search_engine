@@ -39,3 +39,12 @@ sudo apt install librestbed-dev
 > cd front_end
 > npm start
 ```
+
+## Cli with Docker
+
+This example shows how to run project with command line interface (Cli) using docker-compose.
+
+``` bash
+sudo docker-compose up --build
+```
+

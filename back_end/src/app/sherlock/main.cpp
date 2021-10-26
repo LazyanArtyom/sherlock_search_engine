@@ -1,17 +1,7 @@
 #include "../../sherlock.h"
-#include "../../service/sherlockservice.h"
-#include "../../resource/sherlockresourcefactory.h"
-#include "../../service/sherlockservicesettingsfactory.h"
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
-    // auto resourceFactory = std::make_shared<sherlock::SherlockResourceFactory>();
-    // auto settingsFactory = std::make_shared<sherlock::SherlockServiceSettingsFactory>();
-
-    // sherlock::SherlockService service{resourceFactory, settingsFactory};
-
-    // service.start();
-
     if (argc == 1)
     {
         sherlock::Sherlock::runCli(); // default
@@ -38,7 +28,7 @@ int main(int argc, char* argv[])
 
         if (cmd == "--batch" || cmd == "-b")
         {
-            sherlock::Sherlock::runBatch(file, ( argc == 4 ? argv[3] : "" ));
+            sherlock::Sherlock::runBatch(file, (argc == 4 ? argv[3] : ""));
         }
         else
             sherlock::Sherlock::printHelp();
